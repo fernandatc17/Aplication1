@@ -1,0 +1,1 @@
+web: python manage.py migrate && gunicorn django_project_mysql_cloud.wsgi:application --bind 0.0.0.0:$PORT
